@@ -1,0 +1,1 @@
+@start explorer .\node_modules\electron\dist

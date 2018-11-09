@@ -1,0 +1,27 @@
+html, body {
+    margin: 0; padding: 0;
+  }
+
+  body {
+      overflow: hidden;
+  }
+
+  .hero-bkg-animated {
+    background: gray url(../images/geometry.png) repeat 0 0;
+    width: 100%;
+    margin: 0;
+    text-align: center;
+    height: 300px;
+    padding-top: 120px;
+    box-sizing: border-box;
+    -webkit-animation: slide 30s linear infinite;
+  }
+  
+  .hero-bkg-animated h1 {
+    font-family: sans-serif;
+  }
+  
+  @-webkit-keyframes slide {
+      from { background-position: 0 0; }
+      to { background-position: -400px 0px; }
+  }

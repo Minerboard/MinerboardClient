@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset='UTF-8'>
+    <link rel="stylesheet" href="../bower_components/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/background.css">
+    <link rel="stylesheet" href="css/logo.css">
+  </head>
+  <body class="hero-bkg-animated">
+    <div id='app-container'></div>
+
+    <div id="mb-logo">
+      <div id="logo-image-container">
+          <img src="logos/mb-logo.png" id="logo-img"/>
+      </div>
+      <h3 id="logo-text">Minerboard</h3>
+    </div>​
+
+    <button class = "btn btn-secondary" id = "back-btn" style="position:absolute; left:2%; margin-top: -13.2%">Back</button>
+
+    <h2 class='text-center' id='main-message' style="margin-top: 3%" id='msg-text'>
+        Let's start mining now
+    </h2>
+
+    <div class='container w-50 p-3 align-middle'>
+        <div class = "form-group text-center">
+            <button class = "btn btn-primary" id = "start-btn">Start mining</button>
+        </div>
+    </div>
+
+    <div class='container w-50 p-3 align-middle' style="margin-top: -5%">
+      <div class = "form-group text-center">
+          <button class = "btn btn-info" id = "log-btn">Show miner output</button>
+      </div>
+    </div>
+
+      <div class='container align-middle' id='text-box'
+      style="background-color: rgb(0, 0, 0); color:rgb(214, 214, 214); font-family: monospace; margin-top: -3%; height: 320px; width: 520px; text-align:left; overflow-y: scroll; white-space: nowrap; overflow-x:scroll">
+      </div>
+
+    <div id="downloader">
+      <div class="progress w-75" style="margin-left: auto; margin-right: auto; margin-top:13%">
+        <div class="progress-bar progress-bar-striped progress-bar-animated" id='progress-bar'
+        role="progressbar" style="width: 50%"></div>
+      </div>
+      <h6 class='text-center' id="progress-text"></h6>
+    </div>
+
+    <script src="../src/mining.js"></script>
+  </body>
+</html>

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset='UTF-8'>
+    <link rel="stylesheet" href="../bower_components/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/background.css">
+    <link rel="stylesheet" href="css/logo.css">
+  </head>
+  <body class="hero-bkg-animated">
+    <div id='app-container'></div>
+
+    <div id="mb-logo">
+        <div id="logo-image-container">
+            <img src="logos/mb-logo.png" id="logo-img"/>
+        </div>
+        <h3 id="logo-text">Minerboard</h3>
+    </div>​
+
+    <h2 class='text-center' id='main-message' style="margin-top: -3%" id='msg-text'>
+        Enter your key and unique hardware name
+    </h2>
+
+    <div class='container w-50 p-3 align-middle'>     
+        <div class = "form-group"> 
+            <input type = "text" name = "Token" value = "" id = "token-input" 
+                placeholder = "Key" class = "form-control" required>
+        </div>
+        
+        <div class = "form-group">
+            <input type = "text" name = "Name" value = "" id = "name-input" 
+                placeholder = "Name" class = "form-control" required>
+        </div>
+        
+        <div class='container'>
+            <div class='btn-group btn-group-justified' id='row'>
+                <div class = "form-group text-center">
+                    <button class = "btn btn-secondary" id = "logout-btn">Logout</button>
+                    <button class = "btn btn-primary" id = "register-btn">Register</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class=" container alert alert-danger text-center w-75 p-3 align-middle" role="alert" id="alert">
+        Alert
+    </div>
+
+    <script src="../src/auth.js"></script>
+  </body>
+</html>
